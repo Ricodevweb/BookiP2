@@ -16,30 +16,33 @@
 </head>
 
 <body>
-<div class="body-container">
+<div class="body-container">  <!-- Conteneur principal de la page -->
 
     <!-- **************** Header *********** -->
     <header class="header-container">
         <div class="logo"><img src="./images/logo/Booki.png" alt="logo booki"></div>
-        <nav class="nav-bar">
+
+        <nav class="nav-bar">         <!-- Barre de navigation avec des liens vers des sections spécifiques de la page -->
+
             <a class="nav-links" href="#ancre-hebergements">Hébergements</a>
             <a class="nav-links" href="#ancre-activites">Activités</a>
         </nav>
     </header>
 
     <!-- **************** Main ************** -->
-    <main class="main-container">
+    <main class="main-container">  <!-- Contenu principal de la page -->
 
         <!-- ************ Search-bar-container ************* -->
-        <section class="search-bar-container">
+        <section class="search-bar-container">  <!-- Conteneur de la barre de recherche -->
             <div class="search-title">
                 <h1 class="section-title">Trouver votre hébergement pour des vacances de rêve </h1>
                 <P class="section-subtitle">En plein centre-ville ou en pleine nature</P>
             </div>
 
             <!-- *********** Form search ***************** -->
-            <form class="search-form">
-                <label for="name" class="search-label"><i class="fa-solid fa-location-dot fa-solid-black"></i></label>
+            <form class="search-form">  <!-- Formulaire de recherche avec un champ de texte et des boutons de soumission -->
+
+                <label for="name" class="search-label"><i class="fa-solid fa-location-dot fa-solid-black"></i></label>   <!-- Icône de localisation intégrée au formulaire -->
                 <input type="text" id="name" name="input-fields" value="Marseille, France"
                        class="filter-title search-input">
                 <button type="button" class="search-button">Recherche</button>
@@ -48,7 +51,8 @@
                 </button>
             </form>
             <!-- *************** Filter search *************** -->
-            <div class="filter">
+            <div class="filter">  <!-- Filtres de recherche avec des icônes représentant différentes options -->
+
                 <div class="filter-title">Filtres</div>
                 <div class="filter-item">
                     <i class="fa-solid fa-money-bill-wave fa-lg"></i>
@@ -68,7 +72,8 @@
                 </div>
             </div>
 
-            <div class="infos">
+            <div class="infos">  <!-- Information sur le nombre de logements disponibles -->
+
                 <div class="icon-infos">
                     <i class="fa-solid fa-info fa-xs"></i>
                 </div>
@@ -80,7 +85,8 @@
         <div id="ancre-hebergement" class="hebergements-and-populaires">
 
             <!-- ********* Section hebergements ************ -->
-            <section class="hebergements" id="ancre-hebergements">
+            <section class="hebergements" id="ancre-hebergements">  <!-- Section qui affiche les hébergements disponibles -->
+
                 <div class="hebergements-title">
                     <h1 class="section-title">Hébergements à Marseille</h1>
                 </div>
@@ -285,7 +291,8 @@
         </div>
 
         <!-- **************** Section activites ************ -->
-        <section class="activites" id="ancre-activites">
+        <section class="activites" id="ancre-activites">  <!-- Section pour afficher les activités à faire dans la ville -->
+
             <div class="activites-title">
                 <h1 class="section-title">Activités à Marseille</h1>
             </div>
@@ -343,7 +350,8 @@
 
     <!-- ************  Footer **************** -->
     <footer class="footer-container">
-        <section class="footer-section">
+        <section class="footer-section">  <!-- Section de pied de page avec des liens vers d'autres informations -->
+
             <h1 class="filter-title">A propos</h1>
             <a class="card-title" href="#">Fonctionnement du site</a>
             <a class="card-title" href="#">Conditions générales</a>
