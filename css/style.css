@@ -5,7 +5,7 @@
   font-family: "Raleway", sans-serif;
 }
 
-/* Nous déclarons des variables CSS pour les couleurs principales. */
+/* Nous déclarons des variables CSS pour stocker les couleurs principales utilisées dans la page, facilitant ainsi les modifications futures. */
 :root {
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
@@ -14,7 +14,7 @@
   --shadow-color: #0000001a;
 }
 
-/* Nous ciblons les icônes FontAwesome avec le style solide. */
+/* Nous personnalisons les icônes FontAwesome en appliquant des couleurs spécifiques. */
 .fa-solid {
   color: var(--main-color);
 }
@@ -29,11 +29,15 @@
   color: white;
 }
 
+/* CENTRAGE DU CONTENU */
+
+/* Le corps de la page est centré horizontalement avec flexbox. */
 body {
   display: flex;
   justify-content: center;
 }
 
+/* Le conteneur principal occupe toute la largeur disponible avec une largeur maximale fixée pour éviter un étalement trop large. */
 .body-container {
   display: flex;
   flex-direction: column;
@@ -51,12 +55,15 @@ body {
 }
 
 /* LES CLASSES DE POLICE DE CARATÈRES */
+
+/* Classe utilisée pour les titres principaux des sections */
 *.section-title {
   margin: 0;
   font-size: 22px;
   font-weight: 700;
 }
 
+/* Sous-titres des cartes */
 .card-title {
   font-size: 16px;
   font-weight: 700;
@@ -82,6 +89,7 @@ body {
   margin-bottom: 8px;
 }
 
+/* Stylisation générale des cartes avec fond blanc, coins arrondis et ombre. */
 .card {
   background-color: white;
   border-radius: 20px;
@@ -127,8 +135,8 @@ body {
 }
 
 .nav-bar .nav-links:hover {
-  color: var(--main-color);
-  border-top: solid 2px var(--main-color);
+  color: var(--main-color); /* Change de couleur au survol */
+  border-top: solid 2px var(--main-color); /* La bordure supérieure change de couleur au survol */
 }
 
 /* SEARCH-BAR-CONTAINER */
@@ -194,7 +202,7 @@ body {
   border: 1px solid var(--main-color);
 }
 
-/** cette class permet de masquer le bouton loupe en version desktop et tablette **/
+/* Version mobile : le bouton de recherche est remplacé par un bouton de loupe (visible en version mobile uniquement). */
 .search-button-glass {
   display: none;
 }
@@ -205,6 +213,7 @@ body {
   gap: 15px;
 }
 
+/* Chaque élément de filtre a des bordures arrondies et change de couleur au survol. */
 .filter-item {
   display: flex;
   align-items: center;
